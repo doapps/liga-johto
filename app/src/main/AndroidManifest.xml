@@ -9,9 +9,14 @@
             android:roundIcon="@mipmap/ic_launcher_round"
             android:supportsRtl="true"
             android:theme="@style/AppTheme">
-        <activity android:name=".activity.HomeActivity"
-                  android:screenOrientation="portrait"
-                  android:windowSoftInputMode="stateHidden">
+        <activity android:name=".activity.PokemonDetailActivity">
+        </activity>
+        <activity android:name=".activity.PokedexActivity">
+        </activity>
+        <activity
+                android:name=".activity.HomeActivity"
+                android:screenOrientation="portrait"
+                android:windowSoftInputMode="stateHidden">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
 

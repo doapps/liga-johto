@@ -1,12 +1,15 @@
 package me.doapps.ligajohto.adapter
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.recyclerview.widget.RecyclerView
 import kotlinx.android.synthetic.main.item_home.view.*
 import me.doapps.ligajohto.R
+import me.doapps.ligajohto.activity.PokedexActivity
 import me.doapps.ligajohto.config.Setting
 
 class HomeAdapter(var listHome: MutableList<Pair<String, String>>) : RecyclerView.Adapter<HomeAdapter.HomeHolder>() {
@@ -76,7 +79,14 @@ class HomeAdapter(var listHome: MutableList<Pair<String, String>>) : RecyclerVie
 
     inner class HomeHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         init {
-
+            itemView.item_content.setOnClickListener {
+                if (listHome[0].first == listHome[adapterPosition].first) {
+                    itemView.context.startActivity(Intent(itemView.context, PokedexActivity::class.java))
+                } else {
+                    Toast.makeText(itemView.context, "No se encuentra actividad con ese nombre", Toast.LENGTH_SHORT)
+                        .show()
+                }
+            }
         }
     }
 }
