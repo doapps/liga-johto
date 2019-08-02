@@ -1,2 +1,2 @@
 # liga-johto
-Pokemon Liga Johto - demo
+Pokemon Liga Johto - demo Android
