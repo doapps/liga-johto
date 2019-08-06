@@ -10,6 +10,17 @@
 
     <include layout="@layout/app_bar"
              android:id="@+id/toolbar_pokedex"/>
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="160dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:scaleType="fitEnd"
+        app:srcCompat="@drawable/img_pokeball"
+        tools:ignore="ContentDescription" />
+
     <LinearLayout
             android:orientation="vertical"
             android:layout_width="0dp"
@@ -17,7 +28,6 @@
             app:layout_constraintTop_toBottomOf="@+id/toolbar_pokedex"
             app:layout_constraintEnd_toEndOf="parent"
             android:layout_marginEnd="20dp"
-            android:layout_marginBottom="20dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginStart="20dp">

@@ -65,22 +65,32 @@
                       android:id="@+id/linearLayout2"
                       app:layout_constraintTop_toBottomOf="@+id/linearLayout">
 
-            <EditText
+            <com.google.android.material.textfield.TextInputLayout
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:inputType="textPersonName"
-                    android:hint="Search Pokemon"
-                    android:layout_marginTop="20dp"
-                    android:background="@drawable/background_search"
-                    android:padding="12dp"
-                    android:drawablePadding="10dp"
-                    android:drawableStart="@drawable/ic_search_black"
-                    android:ems="10"
                     android:layout_marginStart="7dp"
                     android:layout_marginEnd="7dp"
-                    android:fontFamily="@font/lato"
-                    android:textSize="14sp"
-                    tools:ignore="Autofill" android:id="@+id/searchEditText"/>
+                    android:layout_marginTop="20dp"
+                    app:hintEnabled="false"
+                    app:endIconDrawable="@drawable/ic_clear_black"
+                    app:endIconMode="clear_text"
+                    android:layout_height="wrap_content">
+
+                <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textPersonName"
+                        android:hint="Search Pokemon"
+                        android:background="@drawable/background_search"
+                        android:padding="12dp"
+                        android:drawablePadding="10dp"
+                        android:drawableStart="@drawable/ic_search_black"
+                        android:ems="10"
+                        android:fontFamily="@font/lato"
+                        android:textSize="14sp"
+                        tools:ignore="Autofill"
+                        android:id="@+id/searchEditText"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                     android:layout_width="match_parent"
