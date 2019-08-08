@@ -12,8 +12,8 @@ class DetailPagerAdapter(supportFragmentManager: FragmentManager) : FragmentPage
         var fragment = Fragment()
         when (position) {
             0 -> fragment = AboutFragment()
-            1 -> fragment = EvolutionFragment()
-            2 -> fragment = StatsFragment()
+            1 -> fragment = StatsFragment()
+            2 -> fragment = EvolutionFragment()
         }
         return fragment
     }

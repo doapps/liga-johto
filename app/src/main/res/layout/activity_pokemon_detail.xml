@@ -64,7 +64,7 @@
             android:text="Fuego"
             android:textAlignment="center"
             android:textColor="@color/colorPrimary"
-            android:textSize="10sp"
+            android:textSize="12sp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView" />
 
@@ -90,7 +90,7 @@
             android:scaleType="fitStart"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:srcCompat="@drawable/ic_ornament"/>
+            app:srcCompat="@drawable/ic_ornament" />
 
         <ImageView
             android:id="@+id/imageView8"
@@ -105,36 +105,37 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <LinearLayout
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:background="@drawable/background_pokemon"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/background_pokemon"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
 
         <com.google.android.material.tabs.TabLayout
-                android:id="@+id/tabPager"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
-                android:layout_marginEnd="25dp"
-                android:layout_marginTop="10dp"
-                app:tabIndicatorColor="#6C79DB"
-                app:tabPaddingStart="15dp"
-                app:tabPaddingEnd="15dp"
-                app:tabIndicatorFullWidth="false"
-                app:tabSelectedTextColor="#303943"
-                app:tabTextColor="#C1C4C7"
-                app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"/>
+            android:id="@+id/tabPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/background_tab"
+            app:tabIndicatorColor="#6C79DB"
+            app:tabIndicatorFullWidth="false"
+            app:tabPaddingEnd="15dp"
+            app:tabPaddingStart="15dp"
+            app:tabSelectedTextColor="#303943"
+            app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget"
+            app:tabTextColor="#C1C4C7" />
 
         <androidx.viewpager.widget.ViewPager
-                android:id="@+id/viewPagerPokemon"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginBottom="25dp"/>
+            android:id="@+id/viewPagerPokemon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp" />
 
     </LinearLayout>
 
